@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a Azure</title>
+    <title>Tabla de Personas</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
         }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0078d4 0%, #00bcf2 100%);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            background: white;
-            padding: 60px 80px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
             text-align: center;
         }
-
-        h1 {
-            color: #0078d4;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 1.8em;
-            font-weight: 400;
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido a Azure</h1>
-        <h2>Gilson Tenemea</h2>
-    </div>
+    <h2 style="text-align:center;">Tabla de Personas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>David López</td>
+                <td>25</td>
+                <td>david.lopez@example.com</td>
+            </tr>
+            <tr>
+                <td>María Pérez</td>
+                <td>30</td>
+                <td>maria.perez@example.com</td>
+            </tr>
+            <tr>
+                <td>Carlos Gómez</td>
+                <td>28</td>
+                <td>carlos.gomez@example.com</td>
+            </tr>
+            <tr>
+                <td>Ana Torres</td>
+                <td>22</td>
+                <td>ana.torres@example.com</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
